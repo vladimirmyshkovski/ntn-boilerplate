@@ -1,5 +1,6 @@
 site_url: https://ripple-invincible-ketch.glitch.me # https://ntn-boilerplate.netlify.app/
 logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
+locale: 'ru'
 
 publish_mode: editorial_workflow
 
@@ -21,12 +22,10 @@ collections:
     label: 'Glossary'
     folder: 'content/glossary'
     create: true
-    format: 'frontmatter'
-    slug: '{{fields.createdAt}}-{{slug}}'
     publish: false
     delete: false
-    editor:
-      preview: true
+    format: 'frontmatter'
+    slug: '{{fields.createdAt}}-{{slug}}'
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
@@ -39,8 +38,7 @@ collections:
         name: 'info'
         file: 'content/site/info.json'
         format: 'json'
-        editor:
-          preview: false
+        publish: false
         fields:
           - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
           - {
