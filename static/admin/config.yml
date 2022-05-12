@@ -15,6 +15,7 @@ local_backend: true
 
 media_folder: static/img
 public_folder: /img
+show_preview_links: true
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
@@ -26,8 +27,8 @@ collections:
     slug: '{{fields.createdAt}}-{{slug}}'
     publish: false
     delete: false
-    # editor:
-    #   preview: true
+    editor:
+      preview: true
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
