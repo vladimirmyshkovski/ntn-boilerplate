@@ -1,7 +1,20 @@
 site_url: https://ripple-invincible-ketch.glitch.me # https://ntn-boilerplate.netlify.app/
 logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
-locales: [ru, en]
-default_locale: en
+locale: 'ru'
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, ru]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: ru
 
 publish_mode: editorial_workflow
 
@@ -22,6 +35,7 @@ collections:
   - name: 'glossary'
     label: 'Glossary'
     folder: 'content/glossary'
+    i18n: true
     create: true
     publish: false
     delete: false
