@@ -1,5 +1,5 @@
-site_url: http://localhost:4000/ # https://ntn-boilerplate.netlify.app/
-logo_url: http://localhost:4000/icon.png # https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://ripple-invincible-ketch.glitch.me # https://ntn-boilerplate.netlify.app/
+logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
 
 publish_mode: editorial_workflow
 
