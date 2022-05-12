@@ -24,6 +24,8 @@ collections:
     create: true
     format: 'frontmatter'
     slug: '{{fields.createdAt}}-{{slug}}'
+    publish: false
+    delete: false
     # editor:
     #   preview: true
     fields:
