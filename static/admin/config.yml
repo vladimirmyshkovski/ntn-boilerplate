@@ -1,6 +1,7 @@
 site_url: https://ripple-invincible-ketch.glitch.me # https://ntn-boilerplate.netlify.app/
 logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
-locale: 'ru'
+locales: [ru, en]
+default_locale: en
 
 publish_mode: editorial_workflow
 
