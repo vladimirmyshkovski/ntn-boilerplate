@@ -22,7 +22,7 @@ backend:
   name: git-gateway
   repo: vladimirmyshkovski/ntn-boilerplate
   branch: develop
-  open_authoring: true
+  # open_authoring: true
 
 # used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 local_backend: true
@@ -48,12 +48,12 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
   - label: 'Site settings'
     name: 'site'
+    publish: false
     files:
       - label: 'Info'
         name: 'info'
         file: 'content/site/info.json'
         format: 'json'
-        publish: false
         fields:
           - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
           - {
