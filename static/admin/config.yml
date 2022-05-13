@@ -22,7 +22,8 @@ backend:
   name: git-gateway
   repo: vladimirmyshkovski/ntn-boilerplate
   branch: develop
-  # open_authoring: true
+  squash_merges: true
+  open_authoring: true
 
 # used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 local_backend: true
@@ -40,7 +41,7 @@ collections:
     publish: false
     delete: false
     format: 'frontmatter'
-    slug: '{{fields.createdAt}}-{{slug}}'
+    slug: '{{slug}} | {{fields.createdAt | date('YYYY-MM-DD')}}'
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
