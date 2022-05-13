@@ -39,7 +39,7 @@ export default {
         name: 'description',
         content: SITE_INFO.sitedescription || process.env.npm_package_description || ''
       }
-    ],
+    ]
     /*
     link: [
       {
@@ -83,17 +83,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    '@nuxt/typescript-build',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg',
-    '@nuxtjs/pwa'
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content', '@nuxtjs/i18n', 'nuxt-purgecss', 'nuxt-webfontloader',],
+  modules: ['@nuxt/content', '@nuxtjs/i18n', 'nuxt-purgecss', 'nuxt-webfontloader'],
   /*
    ** Build configuration
    */
