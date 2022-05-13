@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "ipfs",
+        "nuxt",
+        "nuxtjs",
+        "postcss",
+        "purgecss",
+        "stylelint",
+        "tailwindcss",
+        "vite",
+        "webfontloader"
+    ]
+}
