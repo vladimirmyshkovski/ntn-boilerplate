@@ -76,7 +76,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content', 'nuxt-purgecss'],
+  modules: ['@nuxt/content', '@nuxtjs/i18n', 'nuxt-purgecss'],
   /*
    ** Build configuration
    */
