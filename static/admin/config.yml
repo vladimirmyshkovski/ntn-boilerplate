@@ -2,34 +2,7 @@ site_url: https://stellular-kitsune-fccf62.netlify.app/ # https://ntn-boilerplat
 logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
 locale: 'ru'
 
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
-
-  # Required - a list of locales to show in the editor UI
-  locales: [en, ru]
-
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: ru
-
 publish_mode: editorial_workflow
-
-backend:
-  name: git-gateway
-  repo: vladimirmyshkovski/ntn-boilerplate
-  branch: develop
-  open_authoring: true
-  squash_merges: true
-
-# used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
-local_backend: true
-
-media_folder: static/img
-public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
@@ -41,7 +14,7 @@ collections:
     publish: false
     delete: false
     format: 'frontmatter'
-    slug: '{{fields.createdAt | date('YYYY-MM-DD')}}-{{slug}}'
+    slug: '{{fields.createdAt}}-{{slug}}'
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
@@ -72,3 +45,30 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, ru]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: ru
+
+backend:
+  name: git-gateway
+  repo: vladimirmyshkovski/ntn-boilerplate
+  branch: develop
+  open_authoring: true
+  squash_merges: true
+
+# used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+local_backend: true
+
+media_folder: static/img
+public_folder: /img
