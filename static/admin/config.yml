@@ -1,4 +1,4 @@
-site_url: https://ripple-invincible-ketch.glitch.me # https://ntn-boilerplate.netlify.app/
+site_url: https://stellular-kitsune-fccf62.netlify.app/ # https://ntn-boilerplate.netlify.app/
 logo_url: https://stellular-kitsune-fccf62.netlify.app/icon.png
 locale: 'ru'
 
@@ -23,7 +23,7 @@ backend:
   repo: vladimirmyshkovski/ntn-boilerplate
   branch: develop
   open_authoring: true
-  # squash_merges: true
+  squash_merges: true
 
 # used together with `npx netlify-cms-proxy-server`. https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
 local_backend: true
