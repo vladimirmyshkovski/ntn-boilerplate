@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { COLOR_MODE_FALLBACK } from '~/utils/globals.js'
+import { COLOR_MODE_FALLBACK } from '~/utils/globals'
 import IconSystem from '~/components/icons/system.svg?inline'
 import IconLight from '~/components/icons/light.svg?inline'
 import IconDark from '~/components/icons/dark.svg?inline'

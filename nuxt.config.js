@@ -1,7 +1,7 @@
 import postcssPresetEnv from 'postcss-preset-env'
 import postcssEasingGradients from 'postcss-easing-gradients'
 import * as SITE_INFO from './content/site/info.json'
-import { COLOR_MODE_FALLBACK } from './utils/globals.js'
+import { COLOR_MODE_FALLBACK } from './utils/globals'
 
 export default {
   target: 'static',
@@ -126,7 +126,7 @@ export default {
     // ? Safelisting docs: https://purgecss.com/safelisting.html
     safelist: {
       // standard: [],
-      deep: [/dark/, /light/, /btn/, /icon/, /main/],
+      deep: [/dark/, /light/, /btn/, /icon/, /main/, /gray/, /primary/],
       greedy: [/^card/, /image$/, /title$/, /^nuxt-content/, /code/, /pre/, /token/, /^vue-content-placeholders/]
     }
   },
