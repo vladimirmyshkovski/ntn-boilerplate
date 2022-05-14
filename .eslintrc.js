@@ -24,5 +24,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     'node/no-callback-literal': 0,
     'vue/multi-word-component-names': 0
-  }
+  },
+  ignorePatterns: ['static/*']
 }
